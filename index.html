@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vesuvio · Pizzería de Autor — Cocina Italiana en Medellín</title>
+  <meta name="description" content="Vesuvio, pizzería de autor en Medellín. Auténtica cocina italiana, pizzas premiadas 2022, 2023 y 2024. El Poblado y Laureles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="assets/styles.css?v=3" />
+</head>
+<body>
+
+<!-- ══ LOADER ══ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <img src="assets/img/logo.png?v=2" alt="Vesuvio" class="loader-logo" />
+    <div class="loader-sub">PIZZERÍA DE AUTOR</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ══ SCROLL PROGRESS ══ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <a href="#top" class="nav-logo">
+    <img src="assets/img/logo.png?v=2" alt="Vesuvio" class="nav-logo-img" />
+    <span class="nav-sub">PIZZERÍA DE AUTOR</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#historia">Historia</a></li>
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#reservas">Sedes</a></li>
+  </ul>
+  <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="nav-cta">
+    <i class="ti ti-brand-whatsapp"></i> Reservar
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú"><i class="ti ti-menu-2"></i></button>
+</nav>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#historia">Historia</a>
+  <a href="#menu">Menú</a>
+  <a href="#galeria">Galería</a>
+  <a href="#reservas">Sedes</a>
+  <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="mm-cta"><i class="ti ti-brand-whatsapp"></i> Reservar</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<header class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-content">
+    <div class="hero-awards">
+      <i class="ti ti-award"></i> Pizzería ganadora 2022 · 2023 · 2024
+    </div>
+    <h1 class="hero-title">
+      <span class="line">Auténtica cocina</span>
+      <span class="line italic">italiana</span>
+      <span class="line">de autor</span>
+    </h1>
+    <p class="hero-desc">Masa madre, horno de leña y recetas napolitanas en el corazón de Medellín.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn btn-gold">Ver la carta</a>
+      <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="btn btn-ghost"><i class="ti ti-brand-whatsapp"></i> Reservar mesa</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Desliza</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</header>
+
+<!-- ══ PREMIOS ══ -->
+<section class="awards">
+  <div class="awards-inner">
+    <div class="award reveal"><img src="assets/img/award-pizzamaster.png?v=2" alt="Pizza Master" /><span>Pizza Master<br><em>Vesuvio de Autor</em></span></div>
+    <div class="award reveal" style="--d:1"><img src="assets/img/award-restaurantguru.png?v=2" alt="Restaurant Guru 2024" /><span>Restaurant Guru<br><em>Recommended 2024</em></span></div>
+    <div class="award reveal" style="--d:2"><img src="assets/img/award-pizzamaster-red.png?v=2" alt="Pizza Master Vesuvio" /><span>Pizza Master<br><em>Pizzería Vesuvio</em></span></div>
+  </div>
+</section>
+
+<!-- ══ HISTORIA ══ -->
+<section class="section historia" id="historia">
+  <div class="historia-grid">
+    <div class="historia-text reveal">
+      <div class="kicker">Nuestra historia</div>
+      <h2 class="section-title">Una pizzería que <span class="gold-italic">firma</span> cada plato</h2>
+      <p>En Vesuvio no hacemos pizza en serie. Cada receta nace de un proceso de autor: masa de fermentación lenta, ingredientes seleccionados y combinaciones que se atreven a sorprender — desde la trufa negra hasta el chicharrón en cocción lenta de 12 horas.</p>
+      <p>Esa obsesión por el detalle nos ha llevado a ser <strong>pizzería ganadora en 2022, 2023 y 2024</strong>, con dos sedes en Medellín y una comunidad que vuelve por algo más que una buena pizza.</p>
+      <div class="historia-cta">
+        <a href="#menu" class="btn btn-gold-sm">Descubre la carta</a>
+      </div>
+    </div>
+    <div class="historia-stats">
+      <div class="stat-card reveal">
+        <div class="stat-num"><span data-count="20">0</span>+</div>
+        <div class="stat-label">Pizzas de autor</div>
+      </div>
+      <div class="stat-card reveal" style="--d:1">
+        <div class="stat-num"><span data-count="3">0</span></div>
+        <div class="stat-label">Años premiados</div>
+      </div>
+      <div class="stat-card reveal" style="--d:2">
+        <div class="stat-num"><span data-count="2">0</span></div>
+        <div class="stat-label">Sedes en Medellín</div>
+      </div>
+      <div class="stat-card reveal" style="--d:3">
+        <div class="stat-num">12h</div>
+        <div class="stat-label">Cocción lenta</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROMO STRIP ══ -->
+<div class="promo-strip">
+  <div class="promo-track">
+    <span><i class="ti ti-glass-full"></i> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
+    <span><i class="ti ti-glass-full"></i> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
+    <span><i class="ti ti-glass-full"></i> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
+  </div>
+</div>
+
+<!-- ══ ESPECIALIDADES ══ -->
+<section class="section especialidades" id="especialidades">
+  <div class="menu-head reveal">
+    <div class="kicker center">Las favoritas</div>
+    <h2 class="section-title center">Especialidades de la <span class="gold-italic">casa</span></h2>
+    <p class="section-sub">Nuestras creaciones premiadas y más pedidas.</p>
+  </div>
+  <div class="spec-grid">
+    <article class="spec-card reveal">
+      <div class="spec-img"><img src="assets/img/pizza-sinfonia.jpg?v=2" alt="Pizza Sinfonía Disaronno" loading="lazy" /><span class="spec-badge">Ganadora 2024</span></div>
+      <div class="spec-info"><h3>Sinfonía Disaronno</h3><span class="spec-price">$59.000</span></div>
+      <p>Chorizo antioqueño, crema de pistacho, croutons de halloumi y reducción de miel con Amaretto.</p>
+    </article>
+    <article class="spec-card reveal" style="--d:1">
+      <div class="spec-img"><img src="assets/img/pizza-porky.jpg?v=2" alt="Pizza Porky Jack's" loading="lazy" /><span class="spec-badge">Ganadora 2023</span></div>
+      <div class="spec-info"><h3>Porky Jack's</h3><span class="spec-price">$61.000</span></div>
+      <p>Chicharrón crocante 12h, cremoso de Philadelphia, puerro caramelizado y miel de Jack Daniel's Honey.</p>
+    </article>
+    <article class="spec-card reveal" style="--d:2">
+      <div class="spec-img"><img src="assets/img/pizza-tocineta.jpg?v=2" alt="Pizza Tocineta Jäger" loading="lazy" /><span class="spec-badge">Ganadora 2022</span></div>
+      <div class="spec-info"><h3>Tocineta Jäger</h3><span class="spec-price">$60.000</span></div>
+      <p>Tocineta caramelizada en barbacoa Jägermeister, stracciatella cremosa y perejil.</p>
+    </article>
+    <article class="spec-card reveal" style="--d:3">
+      <div class="spec-img"><img src="assets/img/pasta-bolognese.jpg?v=2" alt="Bolognese Wagyu" loading="lazy" /></div>
+      <div class="spec-info"><h3>Bolognese Wagyu</h3><span class="spec-price">$49.000</span></div>
+      <p>Torchietti fresco con ragú de carne Wagyu, pecorino, tomates secos y albahaca.</p>
+    </article>
+    <article class="spec-card reveal" style="--d:4">
+      <div class="spec-img"><img src="assets/img/entrada-burrata.jpg?v=2" alt="Ensalada Burrata" loading="lazy" /></div>
+      <div class="spec-info"><h3>Ensalada Burrata</h3><span class="spec-price">$43.000</span></div>
+      <p>Burrata fresca, mezclum, tomate cherry rostizado y puerro crocante.</p>
+    </article>
+    <article class="spec-card reveal" style="--d:5">
+      <div class="spec-img"><img src="assets/img/coctel-vesuvio.jpg?v=2" alt="Cóctel El Vesuvio" loading="lazy" /><span class="spec-badge">Insignia</span></div>
+      <div class="spec-info"><h3>El Vesuvio</h3><span class="spec-price">$60.000</span></div>
+      <p>Whisky Jack Daniel's, néctar de manzana y ginger ale ahumado con romero fresco.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ══ MENÚ ══ -->
+<section class="section menu" id="menu">
+  <div class="menu-head reveal">
+    <div class="kicker center">La carta</div>
+    <h2 class="section-title center">Menú <span class="gold-italic">Vesuvio</span></h2>
+    <p class="section-sub">Precios en pesos colombianos. Carta sujeta a disponibilidad.</p>
+  </div>
+
+  <div class="menu-tabs" id="menuTabs">
+    <button class="menu-tab active" data-cat="pizzas">Pizzas</button>
+    <button class="menu-tab" data-cat="entradas">Entradas</button>
+    <button class="menu-tab" data-cat="pastas">Pastas</button>
+    <button class="menu-tab" data-cat="postres">Postres</button>
+    <button class="menu-tab" data-cat="cocteles">Cócteles</button>
+    <button class="menu-tab" data-cat="vinos">Vinos & Sangrías</button>
+    <button class="menu-tab" data-cat="bebidas">Bebidas</button>
+  </div>
+
+  <div class="menu-panels">
+
+    <!-- PIZZAS -->
+    <div class="menu-panel active" data-cat="pizzas">
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/sinfonia.jpg?v=2" alt="Sinfonía Disaronno" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Sinfonía Disaronno <span class="badge gold">Ganadora 2024</span></h3><span class="dish-price">$59.000</span></div><p>Mozzarella di búfala, chorizo antioqueño, crema de pistacho, croutons de halloumi, cebolla morada crunchy y reducción de miel y panela con Amaretto Disaronno.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/porky.jpg?v=2" alt="Porky Jack's" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Porky Jack's <span class="badge gold">Ganadora 2023</span></h3><span class="dish-price">$61.000</span></div><p>Chicharrón crocante en cocción lenta de 12h, cremoso de queso Philadelphia, puerro caramelizado y miel de whisky Jack Daniel's Honey.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/tocineta-jager.jpg?v=2" alt="Tocineta Jäger" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Tocineta Jäger <span class="badge gold">Ganadora 2022</span></h3><span class="dish-price">$60.000</span></div><p>Tocineta caramelizada en salsa barbacoa Jägermeister, stracciatella cremosa y perejil fresco.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/la-unione.jpg?v=2" alt="La Unione" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>La Unione <span class="badge">Colaboración</span></h3><span class="dish-price">$61.000</span></div><p>Con Office Burger. Mozzarella y provolone, mermelada de pimentones, pepperoni, tocino horneado 12h, bacon bits y stracciatella con Ron de Caldas.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/affezionada.jpg?v=2" alt="Affezionada" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Affezionada</h3><span class="dish-price">$61.000</span></div><p>Chorizo español, pancetta ahumada con maple y salsiccia siciliana, queso cremoso y el toque dulce del dátil.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/sweet-chili.jpg?v=2" alt="Sweet Chili Pepperoni" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Sweet Chili Pepperoni <span class="badge">Nueva</span></h3><span class="dish-price">$62.000</span></div><p>Doble porción de pepperoni, stracciatella cremosa, puerro caramelizado, albahaca y un toque de nuestra miel picante.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/costilla-bbq.jpg?v=2" alt="Costilla BBQ Jack Daniel's" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Costilla BBQ Jack Daniel's</h3><span class="dish-price">$61.000</span></div><p>Costillas St. Louis horneadas 6h y caramelizadas con BBQ Jack Daniel's, cebolla encurtida, cheddar y perejil.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/roast-beef.jpg?v=2" alt="Roast Beef" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Roast Beef</h3><span class="dish-price">$58.000</span></div><p>Lomo de res al horno, cebolla roja encurtida, puerro crocante, espuma de mostaza Dijon y cornichons.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cremosa-portobello.jpg?v=2" alt="Cremosa di Portobello" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cremosa di Portobello</h3><span class="dish-price">$56.000</span></div><p>Base blanca cremosa, mozzarella di búfala, portobellos salteados, tomates secos, parmesano y jamón ibérico.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/hawaiian-sailor.jpg?v=2" alt="Hawaiian Sailor" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Hawaiian Sailor</h3><span class="dish-price">$56.000</span></div><p>Tocineta crocante caramelizada y piña macerada 12h en Ron Sailor Jerry. Inspirada en el Caribe.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/especial-carnes.jpg?v=2" alt="Especial de Carnes" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Especial de Carnes</h3><span class="dish-price">$60.000</span></div><p>Jamón ibérico, pepperoni y chorizo español, con pecorino rallado y parmesano en escamas.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/gaia.jpg?v=2" alt="Gaia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Gaia</h3><span class="dish-price">$49.000</span></div><p>Pimentón asado, tomates secos, portobello salteado, queso feta fresco y mix de lechuga.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/ratatouille.jpg?v=2" alt="Ratatouille" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ratatouille <span class="badge green">Vegetariana</span></h3><span class="dish-price">$56.000</span></div><p>Cebolla roja, pimentón y berenjena horneada, tomate fresco, portobellos, parmesano y reducción de balsámico de Módena.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cinque-terre.jpg?v=2" alt="Cinque Terre" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cinque Terre <span class="badge green">Vegetariana</span></h3><span class="dish-price">$57.000</span></div><p>Cinco quesos: mozzarella di búfala, pecorino y provolone, espuma de queso azul y costra crocante de cacio e pepe.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/pepperoni.jpg?v=2" alt="Pepperoni" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Pepperoni</h3><span class="dish-price">$46.000</span></div><p>El clásico infaltable. Base pomodoro, mozzarella di búfala y pepperoni americano.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/hawaiian-clasica.jpg?v=2" alt="Hawaiian Clásica" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Hawaiian Clásica</h3><span class="dish-price">$48.000</span></div><p>Base pomodoro, mozzarella di búfala, piña oro miel dulce y jamón York.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/margarita.jpg?v=2" alt="Margarita" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Margarita</h3><span class="dish-price">$42.000</span></div><p>Simple y perfecta. Mozzarella di búfala, albahaca y aceite de oliva extra virgen.</p></div></div>
+    </div>
+
+    <!-- ENTRADAS -->
+    <div class="menu-panel" data-cat="entradas">
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/stracciatella.jpg?v=2" alt="Stracciatella Dolce Mediterráneo" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Stracciatella Dolce Mediterráneo <span class="badge">Nueva</span></h3><span class="dish-price">$41.000</span></div><p>Tostones de pan ciabatta artesanal sobre cama de stracciatella, aceite de trufa, miel picante y pesto rosso.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/carpaccio.jpg?v=2" alt="Carpaccio de Res" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Carpaccio de Res</h3><span class="dish-price">$46.000</span></div><p>Finos cortes de lomo, mezclum de lechugas, parmesano fresco, alcaparras y alioli de puerro tatemado.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/burrata.jpg?v=2" alt="Ensalada Burrata" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ensalada Burrata</h3><span class="dish-price">$43.000</span></div><p>Burrata fresca sobre mezclum, tomate cherry rostizado, mantequilla aromatizada y puerro crocante.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/portobellos.jpg?v=2" alt="Portobellos Rellenos" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Portobellos Rellenos</h3><span class="dish-price">$39.000</span></div><p>Hongos portobello rellenos de crema de queso, mozzarella di búfala, tomates secos y parmesano, coronados con jamón ibérico.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/queso-crunchy.jpg?v=2" alt="Queso Crunchy" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Queso Crunchy <span class="badge muted">Para dos</span></h3><span class="dish-price">$39.000</span></div><p>Halloumi apanado en panko especiado, acompañado de mermelada de frutos criollos.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/bruschettas.jpg?v=2" alt="Trío de Bruschettas" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Trío de Bruschettas</h3><span class="dish-price">$38.000</span></div><p>Jamón ibérico y stracciatella; tomate fresco y mantequilla aromatizada; y roast beef con cebolla caramelizada.</p></div></div>
+    </div>
+
+    <!-- PASTAS -->
+    <div class="menu-panel" data-cat="pastas">
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/bolognese.jpg?v=2" alt="Bolognese Wagyu" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Bolognese Wagyu</h3><span class="dish-price">$49.000</span></div><p>Torchietti fresco con ragú bolognese de carne Wagyu cocinado lentamente, pecorino, tomates secos y albahaca.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/ravioli.jpg?v=2" alt="Ravioli Alfredo de Setas & Trufa" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ravioli Alfredo de Setas & Trufa</h3><span class="dish-price">$48.000</span></div><p>Raviolis a tu elección (pollo, carne o tres quesos) en salsa Alfredo con hongos salteados y trufa negra.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/carbonara.jpg?v=2" alt="Maccheroni Carbonara" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Maccheroni Carbonara</h3><span class="dish-price">$45.000</span></div><p>Salsa cremosa de yemas y parmesano, guanciale tostado y pancetta ahumada. La carbonara romana a la Vesuvio.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/pesto-rosso.jpg?v=2" alt="Pesto Rosso" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Pesto Rosso</h3><span class="dish-price">$45.000</span></div><p>Maccheroni con pesto rosso de la casa de tomates secos y hierbas, pancetta ahumada crocante y Grana Padano.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cacio-pepe.jpg?v=2" alt="Cacio, Pepe & Limone" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cacio, Pepe & Limone</h3><span class="dish-price">$38.000</span></div><p>Torchietti en emulsión de Pecorino, Parmesano y Grana Padano, mix de tres pimientas y ralladura de limón.</p></div></div>
+    </div>
+
+    <!-- POSTRES -->
+    <div class="menu-panel" data-cat="postres">
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/tarta-creme-brulee.jpg?v=2" alt="Tarta Crème Brûlée" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Tarta Crème Brûlée</h3><span class="dish-price">$33.000</span></div><p>Relleno de queso crema Filadelfia, corteza crocante y dorada, mermelada de frutos rojos y crumble de galleta.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-caramelo.jpg?v=2" alt="Volcán de Caramelo Salado" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán de Caramelo Salado <span class="badge">Nuevo</span></h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con corazón fundido de caramelo salado.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-pistacho.jpg?v=2" alt="Volcán Pistacho" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán Pistacho</h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con centro cremoso de pistacho.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-cookies.jpg?v=2" alt="Volcán Cookies & Cream" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán Cookies & Cream</h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con corazón de cookies and cream.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/brownie-milo.jpg?v=2" alt="Brownie Galleta Milo Macadamia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Brownie Galleta Milo Macadamia</h3><span class="dish-price">$28.000</span></div><p>Galleta de Milo melcochuda con macadamia y galleta de chocolate blanco.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/galleta-macadamia.jpg?v=2" alt="Galleta Horneada Macadamia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Galleta Horneada Macadamia</h3><span class="dish-price">$27.000</span></div><p>Galleta artesanal recién horneada con macadamia.</p></div></div>
+    </div>
+
+    <!-- CÓCTELES -->
+    <div class="menu-panel" data-cat="cocteles">
+      <div class="dish"><div class="dish-head"><h3>El Vesuvio <span class="badge gold">Insignia</span></h3><span class="dish-price">$60.000</span></div><p>Nuestro cóctel insignia. Whisky Jack Daniel's, néctar de manzana y ginger ale ahumado con romero fresco.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Mezcalita Oro Miel</h3><span class="dish-price">$42.000</span></div><p>Mezcal ahumado, sirope de piña, zumo de limón, miel infusionada con chiles, borde de chamoy y tajín.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Gin & Tonic Colomba Rosa</h3><span class="dish-price">$43.000</span></div><p>Ginebra, pomelo rosado, menta, romero y agua tónica artesanal de toronja.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Gin & Tonic Rosé</h3><span class="dish-price">$42.000</span></div><p>Ginebra, agua de rosas artesanal, frutos del bosque, pimienta rosada y sidra de rosas sparkling.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Mezcal Fresa & Sandía</h3><span class="dish-price">$42.000</span></div><p>Mezcal ahumado, macerado de sandía y fresa con borde de chamoy y tajín.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Moscow Mule Ahumado</h3><span class="dish-price">$40.000</span></div><p>Vodka, sirope de jengibre ahumado con canela y anís, limón fresco y ginger ale.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Anguria</h3><span class="dish-price">$39.000</span></div><p>Cóctel clarificado de Aperol, ginebra, jugo de sandía fresca, limón y un perfume de angostura.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Ambrosia</h3><span class="dish-price">$39.000</span></div><p>Ginebra y limón con macerado de vino tinto especiado, moras silvestres y arándanos frescos.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Rosácea</h3><span class="dish-price">$39.000</span></div><p>Ginebra, limón y licor de naranja, infusión de pétalos de rosa, arándanos, ginger ale y hierbabuena.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Clementina Margarita</h3><span class="dish-price">$39.000</span></div><p>Tequila blanco, almíbar de mandarina artesanal, triple sec y borde de sal rosada del Himalaya.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Paloma Rosa <span class="badge">Nuevo</span></h3><span class="dish-price">$35.000</span></div><p>Tequila Don Julio o Mezcal Unión, Smirnoff Spicy Tamarindo, limón, miel de agave y soda de toronja.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Aperol Spritz</h3><span class="dish-price">$35.000</span></div><p>El clásico italiano. Aperol, Prosecco Cinzano, un toque de soda y naranja fresca.</p></div>
+      <div class="dish"><div class="dish-head"><h3>JP Chenet Fizzy Rosé</h3><span class="dish-price">$26.000</span></div><p>Aperitivo francés varietal, ideal como acompañante.</p></div>
+    </div>
+
+    <!-- VINOS & SANGRÍAS -->
+    <div class="menu-panel" data-cat="vinos">
+      <div class="menu-subhead">Sangrías</div>
+      <div class="dish"><div class="dish-head"><h3>Sangría Rosé & Lychees</h3><span class="dish-price">Copa $33.000 · Jarra $145.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Sangría Vino Blanco</h3><span class="dish-price">Copa $29.000 · Jarra $125.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Sangría Vino Tinto</h3><span class="dish-price">Copa $29.000 · Jarra $125.000</span></div></div>
+      <div class="menu-subhead">Sangrías Lambrusco · jarra</div>
+      <div class="dish"><div class="dish-head"><h3>Lambrusco Rosé</h3><span class="dish-price">$155.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Lambrusco Blanco</h3><span class="dish-price">$145.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Lambrusco Tinto</h3><span class="dish-price">$145.000</span></div></div>
+      <div class="menu-subhead">Vinos por copa</div>
+      <div class="dish"><div class="dish-head"><h3>Vino Tinto</h3><span class="dish-price">$29.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Vino Blanco</h3><span class="dish-price">$29.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Vino Rosado</h3><span class="dish-price">$30.000</span></div></div>
+      <div class="menu-subhead">Vinos por botella</div>
+      <div class="dish"><div class="dish-head"><h3>Durigutti Viognier <span class="badge muted">Argentina</span></h3><span class="dish-price">$191.000</span></div><p>Blanco. La elegancia de Mendoza embotellada.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Zonin Valpolicella Clásico <span class="badge muted">Italia</span></h3><span class="dish-price">$187.000</span></div><p>Tinto. La esencia del norte de Italia.</p></div>
+      <div class="dish"><div class="dish-head"><h3>B&G Rosé de Anjou <span class="badge muted">Francia</span></h3><span class="dish-price">$159.000</span></div><p>Rosado para seducir con suavidad.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Morandé Reserva Gewürztraminer <span class="badge muted">Chile</span></h3><span class="dish-price">$151.000</span></div><p>Blanco exótico, atrevido y perfumado.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Nebla Garnacha <span class="badge muted">España</span></h3><span class="dish-price">$138.000</span></div><p>Tinto que envuelve como la niebla.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Vagabundo Merlot <span class="badge muted">Chile</span></h3><span class="dish-price">$129.000</span></div><p>Tinto con sabor y carácter.</p></div>
+      <div class="dish"><div class="dish-head"><h3>Ognigiorno Rosato Lambrusco <span class="badge muted">Italia</span></h3><span class="dish-price">$113.000</span></div><p>Rosado para comenzar con alegría.</p></div>
+    </div>
+
+    <!-- BEBIDAS -->
+    <div class="menu-panel" data-cat="bebidas">
+      <div class="menu-subhead">Limonadas</div>
+      <div class="dish"><div class="dish-head"><h3>Limonada de Coco</h3><span class="dish-price">$17.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Limonada de Hierbabuena</h3><span class="dish-price">$17.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Limonada Natural</h3><span class="dish-price">$17.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Limonada de Sandía</h3><span class="dish-price">$17.900</span></div></div>
+      <div class="menu-subhead">Sodas artesanales</div>
+      <div class="dish"><div class="dish-head"><h3>Soda Piña Hierbabuena <span class="badge">Nueva</span></h3><span class="dish-price">$16.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Soda Lychee</h3><span class="dish-price">$16.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Soda Sandía Limón</h3><span class="dish-price">$16.500</span></div></div>
+      <div class="menu-subhead">Gaseosas & Sodas</div>
+      <div class="dish"><div class="dish-head"><h3>Bretaña</h3><span class="dish-price">$11.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Soda Hatsu</h3><span class="dish-price">$11.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Coca-Cola</h3><span class="dish-price">$10.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Coca-Cola Zero</h3><span class="dish-price">$10.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Manzana Postobón</h3><span class="dish-price">$10.500</span></div></div>
+      <div class="menu-subhead">Té & Aguas</div>
+      <div class="dish"><div class="dish-head"><h3>Té Hatsu</h3><span class="dish-price">$13.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Agua Manantial</h3><span class="dish-price">$9.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Agua Manantial con gas</h3><span class="dish-price">$10.500</span></div></div>
+      <div class="menu-subhead">Cervezas</div>
+      <div class="dish"><div class="dish-head"><h3>Delirium Tremens <span class="badge muted">Importada</span></h3><span class="dish-price">$41.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Erdinger <span class="badge muted">Importada</span></h3><span class="dish-price">$28.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Stella Artois</h3><span class="dish-price">$16.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>3 Cordilleras Rosada</h3><span class="dish-price">$16.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Corona</h3><span class="dish-price">$15.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>BBC Cajicá Miel</h3><span class="dish-price">$15.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Club Colombia</h3><span class="dish-price">$14.900</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Águila</h3><span class="dish-price">$11.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Águila Light</h3><span class="dish-price">$11.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Michelada <span class="badge muted">Adición</span></h3><span class="dish-price">+ $4.500</span></div></div>
+      <div class="menu-subhead">Bebidas calientes</div>
+      <div class="dish"><div class="dish-head"><h3>Americano</h3><span class="dish-price">$7.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Espresso</h3><span class="dish-price">$7.500</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Aromática</h3><span class="dish-price">$7.000</span></div></div>
+      <div class="menu-subhead">Licores · trago / botella</div>
+      <div class="dish"><div class="dish-head"><h3>Tequila Don Julio 70</h3><span class="dish-price">$60.000 · $770.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Whisky Macallan 12</h3><span class="dish-price">$58.000 · $710.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Ron Zacapa 23</h3><span class="dish-price">$48.000 · $590.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Tequila Patrón Añejo</h3><span class="dish-price">$48.000 · $590.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Ginebra Hendrick's</h3><span class="dish-price">$40.000 · $525.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Mezcal Montelobos</h3><span class="dish-price">$40.000 · $520.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Whisky Buchanan's 12</h3><span class="dish-price">$29.000 · $380.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Whisky Old Parr 12</h3><span class="dish-price">$27.000 · $360.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Amaretto Disaronno</h3><span class="dish-price">$27.000 · $365.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Whisky Jack Daniel's No. 7</h3><span class="dish-price">$22.000 · $297.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Tequila Jimador</h3><span class="dish-price">$20.000 · $270.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Ron Viejo de Caldas 8 años</h3><span class="dish-price">$18.000 · $250.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Vodka Absolut</h3><span class="dish-price">$17.000 · $237.000</span></div></div>
+      <div class="dish"><div class="dish-head"><h3>Ginebra Gordon's</h3><span class="dish-price">$15.000 · $185.000</span></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ GALERÍA ══ -->
+<section class="section galeria" id="galeria">
+  <div class="menu-head reveal">
+    <div class="kicker center">Galería</div>
+    <h2 class="section-title center">Cada plato, una <span class="gold-italic">obra</span></h2>
+    <p class="section-sub">Un vistazo a lo que servimos cada noche.</p>
+  </div>
+  <div class="gallery-grid">
+    <figure class="gallery-item reveal" data-label="Horno de leña"><img src="assets/img/cover-horno.jpg?v=2" alt="Horno de leña" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Masa artesanal" style="--d:1"><img src="assets/img/cover-masa.jpg?v=2" alt="Masa artesanal" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Sweet Chili Pepperoni" style="--d:2"><img src="assets/img/menu/sweet-chili.jpg?v=2" alt="Pizza Sweet Chili Pepperoni" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Maccheroni Carbonara" style="--d:3"><img src="assets/img/menu/carbonara.jpg?v=2" alt="Maccheroni Carbonara" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Carpaccio de Res" style="--d:4"><img src="assets/img/menu/carpaccio.jpg?v=2" alt="Carpaccio de Res" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Volcán Pistacho" style="--d:5"><img src="assets/img/menu/volcan-pistacho.jpg?v=2" alt="Volcán Pistacho" loading="lazy" /></figure>
+  </div>
+</section>
+
+<!-- ══ RESERVAS / SEDES ══ -->
+<section class="section reservas" id="reservas">
+  <div class="menu-head reveal">
+    <div class="kicker center">Visítanos</div>
+    <h2 class="section-title center">Dos sedes en <span class="gold-italic">Medellín</span></h2>
+  </div>
+
+  <div class="sedes-grid">
+    <div class="sede-card reveal">
+      <div class="sede-name"><i class="ti ti-map-pin"></i> El Poblado</div>
+      <p class="sede-desc">El corazón gastronómico de Medellín. Ambiente íntimo y de autor.</p>
+      <div class="sede-links">
+        <a href="https://maps.app.goo.gl/VGRGrMFMMTBbAntR8" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-map-pin"></i> Google Maps</a>
+        <a href="https://waze.com/ul/hd34724phb" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-brand-waze"></i> Waze</a>
+      </div>
+    </div>
+    <div class="sede-card reveal" style="--d:1">
+      <div class="sede-name"><i class="ti ti-map-pin"></i> Laureles</div>
+      <p class="sede-desc">Nuestra casa en el occidente de la ciudad. Tradición y buena mesa.</p>
+      <div class="sede-links">
+        <a href="https://maps.app.goo.gl/mUNts7UPjVfGxSpZ6" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-map-pin"></i> Google Maps</a>
+        <a href="https://waze.com/ul/hd345x8y1g" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-brand-waze"></i> Waze</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="horarios reveal">
+    <h3>Horarios</h3>
+    <div class="horarios-grid">
+      <div class="hor-row"><span class="hor-day">Lunes a Jueves</span><span class="hor-time">3:00 pm – 10:00 pm</span></div>
+      <div class="hor-row"><span class="hor-day">Viernes y Sábado</span><span class="hor-time">12:30 pm – 11:00 pm</span></div>
+      <div class="hor-row"><span class="hor-day">Domingos</span><span class="hor-time">12:30 pm – 10:00 pm</span></div>
+    </div>
+  </div>
+
+  <div class="reservas-actions reveal">
+    <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="btn btn-gold btn-lg"><i class="ti ti-brand-whatsapp"></i> Reservar por WhatsApp</a>
+    <a href="https://www.rappi.com.co/restaurantes/900242973-pizzeria-vesuvio" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"><i class="ti ti-moped"></i> Pedir por Rappi</a>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <img src="assets/img/logo.png?v=2" alt="Vesuvio" class="footer-logo-img" />
+  <div class="footer-sub">PIZZERÍA DE AUTOR · MEDELLÍN</div>
+  <div class="footer-links">
+    <a href="#historia">Historia</a>
+    <a href="#menu">Menú</a>
+    <a href="#galeria">Galería</a>
+    <a href="#reservas">Sedes</a>
+    <a href="https://www.rappi.com.co/restaurantes/900242973-pizzeria-vesuvio" target="_blank" rel="noopener">Rappi</a>
+  </div>
+  <div class="footer-copy">© 2025 Vesuvio Pizzería de Autor. Todos los derechos reservados.</div>
+</footer>
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+</body>
+</html>
