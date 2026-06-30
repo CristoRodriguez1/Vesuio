@@ -33,11 +33,17 @@
   /* ── MENU TABS ── */
   const tabs = document.querySelectorAll('.menu-tab');
   const panels = document.querySelectorAll('.menu-panel');
+  const menuSection = document.getElementById('menu');
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const cat = tab.dataset.cat;
       tabs.forEach(t => t.classList.toggle('active', t === tab));
       panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      if (menuSection) {
+        const navHeight = nav ? nav.offsetHeight : 0;
+        const top = menuSection.getBoundingClientRect().top + window.scrollY - navHeight;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
     });
   });
 
