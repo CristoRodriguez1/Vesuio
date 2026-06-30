@@ -163,7 +163,7 @@ a { color: inherit; text-decoration: none; }
   background:
     linear-gradient(to bottom, #0a0e0cdd 0%, #0a0e0c99 38%, #0a0e0cbb 72%, var(--bg) 100%),
     radial-gradient(ellipse at 50% 42%, transparent 0%, #0a0e0c 96%),
-    url('img/hero.jpg') center/cover no-repeat;
+    url('img/hero.webp') center/cover no-repeat;
   transform: scale(1.04);
   animation: heroZoom 18s ease-in-out infinite alternate;
 }
@@ -447,4 +447,12 @@ a { color: inherit; text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* ── SVG ICONS ── */
+.icon {
+  width: 1em; height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
 }

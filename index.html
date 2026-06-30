@@ -8,15 +8,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
-  <link rel="stylesheet" href="assets/styles.css?v=3" />
+  <link rel="stylesheet" href="assets/styles.css?v=4" />
 </head>
 <body>
+<!-- SVG Sprite (replaces Tabler CDN) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="9" r="6"/>
+    <path d="M12 15l3.4 5.89 1.598-3.233 3.598.232-3.4-5.889"/>
+    <path d="M6.802 12l-3.4 5.89 3.598-.233 1.598 3.232L12 15"/>
+  </symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"/>
+    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/>
+  </symbol>
+  <symbol id="icon-glass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 21h8M12 15v6M17 3l1 7c0 3.314-2.686 6-6 6S6 13.314 6 10l1-7z"/>
+    <line x1="6" y1="10" x2="18" y2="10"/>
+  </symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="11" r="3"/>
+    <path d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="4" y1="6" x2="20" y2="6"/>
+    <line x1="4" y1="12" x2="20" y2="12"/>
+    <line x1="4" y1="18" x2="20" y2="18"/>
+  </symbol>
+  <symbol id="icon-delivery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/>
+    <path d="M5 17H3v-4M2 5h11v12M9 17h6M15 5v8h4l2 4"/>
+  </symbol>
+</svg>
+
 
 <!-- ══ LOADER ══ -->
 <div class="loader" id="loader">
   <div class="loader-inner">
-    <img src="assets/img/logo.png?v=2" alt="Vesuvio" class="loader-logo" />
+    <img src="assets/img/logo.webp?v=3" alt="Vesuvio" class="loader-logo" />
     <div class="loader-sub">PIZZERÍA DE AUTOR</div>
     <div class="loader-bar"><span></span></div>
   </div>
@@ -28,7 +57,7 @@
 <!-- ══ NAV ══ -->
 <nav id="nav">
   <a href="#top" class="nav-logo">
-    <img src="assets/img/logo.png?v=2" alt="Vesuvio" class="nav-logo-img" />
+    <img src="assets/img/logo.webp?v=3" alt="Vesuvio" class="nav-logo-img" />
     <span class="nav-sub">PIZZERÍA DE AUTOR</span>
   </a>
   <ul class="nav-links">
@@ -38,9 +67,9 @@
     <li><a href="#reservas">Sedes</a></li>
   </ul>
   <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="nav-cta">
-    <i class="ti ti-brand-whatsapp"></i> Reservar
+    <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Reservar
   </a>
-  <button class="nav-toggle" id="navToggle" aria-label="Menú"><i class="ti ti-menu-2"></i></button>
+  <button class="nav-toggle" id="navToggle" aria-label="Menú"><svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg></button>
 </nav>
 
 <!-- ══ MOBILE MENU ══ -->
@@ -49,7 +78,7 @@
   <a href="#menu">Menú</a>
   <a href="#galeria">Galería</a>
   <a href="#reservas">Sedes</a>
-  <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="mm-cta"><i class="ti ti-brand-whatsapp"></i> Reservar</a>
+  <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="mm-cta"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Reservar</a>
 </div>
 
 <!-- ══ HERO ══ -->
@@ -58,7 +87,7 @@
   <div class="hero-vignette"></div>
   <div class="hero-content">
     <div class="hero-awards">
-      <i class="ti ti-award"></i> Pizzería ganadora 2022 · 2023 · 2024
+      <svg class="icon" aria-hidden="true"><use href="#icon-award"/></svg> Pizzería ganadora 2022 · 2023 · 2024
     </div>
     <h1 class="hero-title">
       <span class="line">Auténtica cocina</span>
@@ -68,7 +97,7 @@
     <p class="hero-desc">Masa madre, horno de leña y recetas napolitanas en el corazón de Medellín.</p>
     <div class="hero-btns">
       <a href="#menu" class="btn btn-gold">Ver la carta</a>
-      <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="btn btn-ghost"><i class="ti ti-brand-whatsapp"></i> Reservar mesa</a>
+      <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="btn btn-ghost"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Reservar mesa</a>
     </div>
   </div>
   <div class="hero-scroll">
@@ -80,9 +109,9 @@
 <!-- ══ PREMIOS ══ -->
 <section class="awards">
   <div class="awards-inner">
-    <div class="award reveal"><img src="assets/img/award-pizzamaster.png?v=2" alt="Pizza Master" /><span>Pizza Master<br><em>Vesuvio de Autor</em></span></div>
-    <div class="award reveal" style="--d:1"><img src="assets/img/award-restaurantguru.png?v=2" alt="Restaurant Guru 2024" /><span>Restaurant Guru<br><em>Recommended 2024</em></span></div>
-    <div class="award reveal" style="--d:2"><img src="assets/img/award-pizzamaster-red.png?v=2" alt="Pizza Master Vesuvio" /><span>Pizza Master<br><em>Pizzería Vesuvio</em></span></div>
+    <div class="award reveal"><img src="assets/img/award-pizzamaster.webp?v=3" alt="Pizza Master" /><span>Pizza Master<br><em>Vesuvio de Autor</em></span></div>
+    <div class="award reveal" style="--d:1"><img src="assets/img/award-restaurantguru.webp?v=3" alt="Restaurant Guru 2024" /><span>Restaurant Guru<br><em>Recommended 2024</em></span></div>
+    <div class="award reveal" style="--d:2"><img src="assets/img/award-pizzamaster-red.webp?v=3" alt="Pizza Master Vesuvio" /><span>Pizza Master<br><em>Pizzería Vesuvio</em></span></div>
   </div>
 </section>
 
@@ -122,9 +151,9 @@
 <!-- ══ PROMO STRIP ══ -->
 <div class="promo-strip">
   <div class="promo-track">
-    <span><i class="ti ti-glass-full"></i> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
-    <span><i class="ti ti-glass-full"></i> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
-    <span><i class="ti ti-glass-full"></i> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
+    <span><svg class="icon" aria-hidden="true"><use href="#icon-glass"/></svg> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
+    <span><svg class="icon" aria-hidden="true"><use href="#icon-glass"/></svg> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
+    <span><svg class="icon" aria-hidden="true"><use href="#icon-glass"/></svg> Copa de vino gratis · deja tu reseña en Google y TripAdvisor · lunes, martes y miércoles</span>
   </div>
 </div>
 
@@ -137,32 +166,32 @@
   </div>
   <div class="spec-grid">
     <article class="spec-card reveal">
-      <div class="spec-img"><img src="assets/img/pizza-sinfonia.jpg?v=2" alt="Pizza Sinfonía Disaronno" loading="lazy" /><span class="spec-badge">Ganadora 2024</span></div>
+      <div class="spec-img"><img src="assets/img/pizza-sinfonia.webp?v=3" alt="Pizza Sinfonía Disaronno" loading="lazy" /><span class="spec-badge">Ganadora 2024</span></div>
       <div class="spec-info"><h3>Sinfonía Disaronno</h3><span class="spec-price">$59.000</span></div>
       <p>Chorizo antioqueño, crema de pistacho, croutons de halloumi y reducción de miel con Amaretto.</p>
     </article>
     <article class="spec-card reveal" style="--d:1">
-      <div class="spec-img"><img src="assets/img/pizza-porky.jpg?v=2" alt="Pizza Porky Jack's" loading="lazy" /><span class="spec-badge">Ganadora 2023</span></div>
+      <div class="spec-img"><img src="assets/img/pizza-porky.webp?v=3" alt="Pizza Porky Jack's" loading="lazy" /><span class="spec-badge">Ganadora 2023</span></div>
       <div class="spec-info"><h3>Porky Jack's</h3><span class="spec-price">$61.000</span></div>
       <p>Chicharrón crocante 12h, cremoso de Philadelphia, puerro caramelizado y miel de Jack Daniel's Honey.</p>
     </article>
     <article class="spec-card reveal" style="--d:2">
-      <div class="spec-img"><img src="assets/img/pizza-tocineta.jpg?v=2" alt="Pizza Tocineta Jäger" loading="lazy" /><span class="spec-badge">Ganadora 2022</span></div>
+      <div class="spec-img"><img src="assets/img/pizza-tocineta.webp?v=3" alt="Pizza Tocineta Jäger" loading="lazy" /><span class="spec-badge">Ganadora 2022</span></div>
       <div class="spec-info"><h3>Tocineta Jäger</h3><span class="spec-price">$60.000</span></div>
       <p>Tocineta caramelizada en barbacoa Jägermeister, stracciatella cremosa y perejil.</p>
     </article>
     <article class="spec-card reveal" style="--d:3">
-      <div class="spec-img"><img src="assets/img/pasta-bolognese.jpg?v=2" alt="Bolognese Wagyu" loading="lazy" /></div>
+      <div class="spec-img"><img src="assets/img/pasta-bolognese.webp?v=3" alt="Bolognese Wagyu" loading="lazy" /></div>
       <div class="spec-info"><h3>Bolognese Wagyu</h3><span class="spec-price">$49.000</span></div>
       <p>Torchietti fresco con ragú de carne Wagyu, pecorino, tomates secos y albahaca.</p>
     </article>
     <article class="spec-card reveal" style="--d:4">
-      <div class="spec-img"><img src="assets/img/entrada-burrata.jpg?v=2" alt="Ensalada Burrata" loading="lazy" /></div>
+      <div class="spec-img"><img src="assets/img/entrada-burrata.webp?v=3" alt="Ensalada Burrata" loading="lazy" /></div>
       <div class="spec-info"><h3>Ensalada Burrata</h3><span class="spec-price">$43.000</span></div>
       <p>Burrata fresca, mezclum, tomate cherry rostizado y puerro crocante.</p>
     </article>
     <article class="spec-card reveal" style="--d:5">
-      <div class="spec-img"><img src="assets/img/coctel-vesuvio.jpg?v=2" alt="Cóctel El Vesuvio" loading="lazy" /><span class="spec-badge">Insignia</span></div>
+      <div class="spec-img"><img src="assets/img/coctel-vesuvio.webp?v=3" alt="Cóctel El Vesuvio" loading="lazy" /><span class="spec-badge">Insignia</span></div>
       <div class="spec-info"><h3>El Vesuvio</h3><span class="spec-price">$60.000</span></div>
       <p>Whisky Jack Daniel's, néctar de manzana y ginger ale ahumado con romero fresco.</p>
     </article>
@@ -191,52 +220,52 @@
 
     <!-- PIZZAS -->
     <div class="menu-panel active" data-cat="pizzas">
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/sinfonia.jpg?v=2" alt="Sinfonía Disaronno" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Sinfonía Disaronno <span class="badge gold">Ganadora 2024</span></h3><span class="dish-price">$59.000</span></div><p>Mozzarella di búfala, chorizo antioqueño, crema de pistacho, croutons de halloumi, cebolla morada crunchy y reducción de miel y panela con Amaretto Disaronno.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/porky.jpg?v=2" alt="Porky Jack's" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Porky Jack's <span class="badge gold">Ganadora 2023</span></h3><span class="dish-price">$61.000</span></div><p>Chicharrón crocante en cocción lenta de 12h, cremoso de queso Philadelphia, puerro caramelizado y miel de whisky Jack Daniel's Honey.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/tocineta-jager.jpg?v=2" alt="Tocineta Jäger" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Tocineta Jäger <span class="badge gold">Ganadora 2022</span></h3><span class="dish-price">$60.000</span></div><p>Tocineta caramelizada en salsa barbacoa Jägermeister, stracciatella cremosa y perejil fresco.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/la-unione.jpg?v=2" alt="La Unione" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>La Unione <span class="badge">Colaboración</span></h3><span class="dish-price">$61.000</span></div><p>Con Office Burger. Mozzarella y provolone, mermelada de pimentones, pepperoni, tocino horneado 12h, bacon bits y stracciatella con Ron de Caldas.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/affezionada.jpg?v=2" alt="Affezionada" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Affezionada</h3><span class="dish-price">$61.000</span></div><p>Chorizo español, pancetta ahumada con maple y salsiccia siciliana, queso cremoso y el toque dulce del dátil.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/sweet-chili.jpg?v=2" alt="Sweet Chili Pepperoni" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Sweet Chili Pepperoni <span class="badge">Nueva</span></h3><span class="dish-price">$62.000</span></div><p>Doble porción de pepperoni, stracciatella cremosa, puerro caramelizado, albahaca y un toque de nuestra miel picante.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/costilla-bbq.jpg?v=2" alt="Costilla BBQ Jack Daniel's" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Costilla BBQ Jack Daniel's</h3><span class="dish-price">$61.000</span></div><p>Costillas St. Louis horneadas 6h y caramelizadas con BBQ Jack Daniel's, cebolla encurtida, cheddar y perejil.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/roast-beef.jpg?v=2" alt="Roast Beef" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Roast Beef</h3><span class="dish-price">$58.000</span></div><p>Lomo de res al horno, cebolla roja encurtida, puerro crocante, espuma de mostaza Dijon y cornichons.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cremosa-portobello.jpg?v=2" alt="Cremosa di Portobello" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cremosa di Portobello</h3><span class="dish-price">$56.000</span></div><p>Base blanca cremosa, mozzarella di búfala, portobellos salteados, tomates secos, parmesano y jamón ibérico.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/hawaiian-sailor.jpg?v=2" alt="Hawaiian Sailor" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Hawaiian Sailor</h3><span class="dish-price">$56.000</span></div><p>Tocineta crocante caramelizada y piña macerada 12h en Ron Sailor Jerry. Inspirada en el Caribe.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/especial-carnes.jpg?v=2" alt="Especial de Carnes" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Especial de Carnes</h3><span class="dish-price">$60.000</span></div><p>Jamón ibérico, pepperoni y chorizo español, con pecorino rallado y parmesano en escamas.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/gaia.jpg?v=2" alt="Gaia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Gaia</h3><span class="dish-price">$49.000</span></div><p>Pimentón asado, tomates secos, portobello salteado, queso feta fresco y mix de lechuga.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/ratatouille.jpg?v=2" alt="Ratatouille" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ratatouille <span class="badge green">Vegetariana</span></h3><span class="dish-price">$56.000</span></div><p>Cebolla roja, pimentón y berenjena horneada, tomate fresco, portobellos, parmesano y reducción de balsámico de Módena.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cinque-terre.jpg?v=2" alt="Cinque Terre" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cinque Terre <span class="badge green">Vegetariana</span></h3><span class="dish-price">$57.000</span></div><p>Cinco quesos: mozzarella di búfala, pecorino y provolone, espuma de queso azul y costra crocante de cacio e pepe.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/pepperoni.jpg?v=2" alt="Pepperoni" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Pepperoni</h3><span class="dish-price">$46.000</span></div><p>El clásico infaltable. Base pomodoro, mozzarella di búfala y pepperoni americano.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/hawaiian-clasica.jpg?v=2" alt="Hawaiian Clásica" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Hawaiian Clásica</h3><span class="dish-price">$48.000</span></div><p>Base pomodoro, mozzarella di búfala, piña oro miel dulce y jamón York.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/margarita.jpg?v=2" alt="Margarita" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Margarita</h3><span class="dish-price">$42.000</span></div><p>Simple y perfecta. Mozzarella di búfala, albahaca y aceite de oliva extra virgen.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/sinfonia.webp?v=3" alt="Sinfonía Disaronno" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Sinfonía Disaronno <span class="badge gold">Ganadora 2024</span></h3><span class="dish-price">$59.000</span></div><p>Mozzarella di búfala, chorizo antioqueño, crema de pistacho, croutons de halloumi, cebolla morada crunchy y reducción de miel y panela con Amaretto Disaronno.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/porky.webp?v=3" alt="Porky Jack's" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Porky Jack's <span class="badge gold">Ganadora 2023</span></h3><span class="dish-price">$61.000</span></div><p>Chicharrón crocante en cocción lenta de 12h, cremoso de queso Philadelphia, puerro caramelizado y miel de whisky Jack Daniel's Honey.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/tocineta-jager.webp?v=3" alt="Tocineta Jäger" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Tocineta Jäger <span class="badge gold">Ganadora 2022</span></h3><span class="dish-price">$60.000</span></div><p>Tocineta caramelizada en salsa barbacoa Jägermeister, stracciatella cremosa y perejil fresco.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/la-unione.webp?v=3" alt="La Unione" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>La Unione <span class="badge">Colaboración</span></h3><span class="dish-price">$61.000</span></div><p>Con Office Burger. Mozzarella y provolone, mermelada de pimentones, pepperoni, tocino horneado 12h, bacon bits y stracciatella con Ron de Caldas.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/affezionada.webp?v=3" alt="Affezionada" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Affezionada</h3><span class="dish-price">$61.000</span></div><p>Chorizo español, pancetta ahumada con maple y salsiccia siciliana, queso cremoso y el toque dulce del dátil.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/sweet-chili.webp?v=3" alt="Sweet Chili Pepperoni" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Sweet Chili Pepperoni <span class="badge">Nueva</span></h3><span class="dish-price">$62.000</span></div><p>Doble porción de pepperoni, stracciatella cremosa, puerro caramelizado, albahaca y un toque de nuestra miel picante.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/costilla-bbq.webp?v=3" alt="Costilla BBQ Jack Daniel's" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Costilla BBQ Jack Daniel's</h3><span class="dish-price">$61.000</span></div><p>Costillas St. Louis horneadas 6h y caramelizadas con BBQ Jack Daniel's, cebolla encurtida, cheddar y perejil.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/roast-beef.webp?v=3" alt="Roast Beef" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Roast Beef</h3><span class="dish-price">$58.000</span></div><p>Lomo de res al horno, cebolla roja encurtida, puerro crocante, espuma de mostaza Dijon y cornichons.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cremosa-portobello.webp?v=3" alt="Cremosa di Portobello" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cremosa di Portobello</h3><span class="dish-price">$56.000</span></div><p>Base blanca cremosa, mozzarella di búfala, portobellos salteados, tomates secos, parmesano y jamón ibérico.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/hawaiian-sailor.webp?v=3" alt="Hawaiian Sailor" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Hawaiian Sailor</h3><span class="dish-price">$56.000</span></div><p>Tocineta crocante caramelizada y piña macerada 12h en Ron Sailor Jerry. Inspirada en el Caribe.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/especial-carnes.webp?v=3" alt="Especial de Carnes" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Especial de Carnes</h3><span class="dish-price">$60.000</span></div><p>Jamón ibérico, pepperoni y chorizo español, con pecorino rallado y parmesano en escamas.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/gaia.webp?v=3" alt="Gaia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Gaia</h3><span class="dish-price">$49.000</span></div><p>Pimentón asado, tomates secos, portobello salteado, queso feta fresco y mix de lechuga.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/ratatouille.webp?v=3" alt="Ratatouille" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ratatouille <span class="badge green">Vegetariana</span></h3><span class="dish-price">$56.000</span></div><p>Cebolla roja, pimentón y berenjena horneada, tomate fresco, portobellos, parmesano y reducción de balsámico de Módena.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cinque-terre.webp?v=3" alt="Cinque Terre" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cinque Terre <span class="badge green">Vegetariana</span></h3><span class="dish-price">$57.000</span></div><p>Cinco quesos: mozzarella di búfala, pecorino y provolone, espuma de queso azul y costra crocante de cacio e pepe.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/pepperoni.webp?v=3" alt="Pepperoni" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Pepperoni</h3><span class="dish-price">$46.000</span></div><p>El clásico infaltable. Base pomodoro, mozzarella di búfala y pepperoni americano.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/hawaiian-clasica.webp?v=3" alt="Hawaiian Clásica" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Hawaiian Clásica</h3><span class="dish-price">$48.000</span></div><p>Base pomodoro, mozzarella di búfala, piña oro miel dulce y jamón York.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/margarita.webp?v=3" alt="Margarita" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Margarita</h3><span class="dish-price">$42.000</span></div><p>Simple y perfecta. Mozzarella di búfala, albahaca y aceite de oliva extra virgen.</p></div></div>
     </div>
 
     <!-- ENTRADAS -->
     <div class="menu-panel" data-cat="entradas">
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/stracciatella.jpg?v=2" alt="Stracciatella Dolce Mediterráneo" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Stracciatella Dolce Mediterráneo <span class="badge">Nueva</span></h3><span class="dish-price">$41.000</span></div><p>Tostones de pan ciabatta artesanal sobre cama de stracciatella, aceite de trufa, miel picante y pesto rosso.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/carpaccio.jpg?v=2" alt="Carpaccio de Res" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Carpaccio de Res</h3><span class="dish-price">$46.000</span></div><p>Finos cortes de lomo, mezclum de lechugas, parmesano fresco, alcaparras y alioli de puerro tatemado.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/burrata.jpg?v=2" alt="Ensalada Burrata" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ensalada Burrata</h3><span class="dish-price">$43.000</span></div><p>Burrata fresca sobre mezclum, tomate cherry rostizado, mantequilla aromatizada y puerro crocante.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/portobellos.jpg?v=2" alt="Portobellos Rellenos" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Portobellos Rellenos</h3><span class="dish-price">$39.000</span></div><p>Hongos portobello rellenos de crema de queso, mozzarella di búfala, tomates secos y parmesano, coronados con jamón ibérico.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/queso-crunchy.jpg?v=2" alt="Queso Crunchy" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Queso Crunchy <span class="badge muted">Para dos</span></h3><span class="dish-price">$39.000</span></div><p>Halloumi apanado en panko especiado, acompañado de mermelada de frutos criollos.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/bruschettas.jpg?v=2" alt="Trío de Bruschettas" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Trío de Bruschettas</h3><span class="dish-price">$38.000</span></div><p>Jamón ibérico y stracciatella; tomate fresco y mantequilla aromatizada; y roast beef con cebolla caramelizada.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/stracciatella.webp?v=3" alt="Stracciatella Dolce Mediterráneo" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Stracciatella Dolce Mediterráneo <span class="badge">Nueva</span></h3><span class="dish-price">$41.000</span></div><p>Tostones de pan ciabatta artesanal sobre cama de stracciatella, aceite de trufa, miel picante y pesto rosso.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/carpaccio.webp?v=3" alt="Carpaccio de Res" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Carpaccio de Res</h3><span class="dish-price">$46.000</span></div><p>Finos cortes de lomo, mezclum de lechugas, parmesano fresco, alcaparras y alioli de puerro tatemado.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/burrata.webp?v=3" alt="Ensalada Burrata" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ensalada Burrata</h3><span class="dish-price">$43.000</span></div><p>Burrata fresca sobre mezclum, tomate cherry rostizado, mantequilla aromatizada y puerro crocante.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/portobellos.webp?v=3" alt="Portobellos Rellenos" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Portobellos Rellenos</h3><span class="dish-price">$39.000</span></div><p>Hongos portobello rellenos de crema de queso, mozzarella di búfala, tomates secos y parmesano, coronados con jamón ibérico.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/queso-crunchy.webp?v=3" alt="Queso Crunchy" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Queso Crunchy <span class="badge muted">Para dos</span></h3><span class="dish-price">$39.000</span></div><p>Halloumi apanado en panko especiado, acompañado de mermelada de frutos criollos.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/bruschettas.webp?v=3" alt="Trío de Bruschettas" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Trío de Bruschettas</h3><span class="dish-price">$38.000</span></div><p>Jamón ibérico y stracciatella; tomate fresco y mantequilla aromatizada; y roast beef con cebolla caramelizada.</p></div></div>
     </div>
 
     <!-- PASTAS -->
     <div class="menu-panel" data-cat="pastas">
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/bolognese.jpg?v=2" alt="Bolognese Wagyu" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Bolognese Wagyu</h3><span class="dish-price">$49.000</span></div><p>Torchietti fresco con ragú bolognese de carne Wagyu cocinado lentamente, pecorino, tomates secos y albahaca.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/ravioli.jpg?v=2" alt="Ravioli Alfredo de Setas & Trufa" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ravioli Alfredo de Setas & Trufa</h3><span class="dish-price">$48.000</span></div><p>Raviolis a tu elección (pollo, carne o tres quesos) en salsa Alfredo con hongos salteados y trufa negra.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/carbonara.jpg?v=2" alt="Maccheroni Carbonara" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Maccheroni Carbonara</h3><span class="dish-price">$45.000</span></div><p>Salsa cremosa de yemas y parmesano, guanciale tostado y pancetta ahumada. La carbonara romana a la Vesuvio.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/pesto-rosso.jpg?v=2" alt="Pesto Rosso" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Pesto Rosso</h3><span class="dish-price">$45.000</span></div><p>Maccheroni con pesto rosso de la casa de tomates secos y hierbas, pancetta ahumada crocante y Grana Padano.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cacio-pepe.jpg?v=2" alt="Cacio, Pepe & Limone" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cacio, Pepe & Limone</h3><span class="dish-price">$38.000</span></div><p>Torchietti en emulsión de Pecorino, Parmesano y Grana Padano, mix de tres pimientas y ralladura de limón.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/bolognese.webp?v=3" alt="Bolognese Wagyu" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Bolognese Wagyu</h3><span class="dish-price">$49.000</span></div><p>Torchietti fresco con ragú bolognese de carne Wagyu cocinado lentamente, pecorino, tomates secos y albahaca.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/ravioli.webp?v=3" alt="Ravioli Alfredo de Setas & Trufa" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Ravioli Alfredo de Setas & Trufa</h3><span class="dish-price">$48.000</span></div><p>Raviolis a tu elección (pollo, carne o tres quesos) en salsa Alfredo con hongos salteados y trufa negra.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/carbonara.webp?v=3" alt="Maccheroni Carbonara" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Maccheroni Carbonara</h3><span class="dish-price">$45.000</span></div><p>Salsa cremosa de yemas y parmesano, guanciale tostado y pancetta ahumada. La carbonara romana a la Vesuvio.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/pesto-rosso.webp?v=3" alt="Pesto Rosso" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Pesto Rosso</h3><span class="dish-price">$45.000</span></div><p>Maccheroni con pesto rosso de la casa de tomates secos y hierbas, pancetta ahumada crocante y Grana Padano.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/cacio-pepe.webp?v=3" alt="Cacio, Pepe & Limone" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Cacio, Pepe & Limone</h3><span class="dish-price">$38.000</span></div><p>Torchietti en emulsión de Pecorino, Parmesano y Grana Padano, mix de tres pimientas y ralladura de limón.</p></div></div>
     </div>
 
     <!-- POSTRES -->
     <div class="menu-panel" data-cat="postres">
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/tarta-creme-brulee.jpg?v=2" alt="Tarta Crème Brûlée" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Tarta Crème Brûlée</h3><span class="dish-price">$33.000</span></div><p>Relleno de queso crema Filadelfia, corteza crocante y dorada, mermelada de frutos rojos y crumble de galleta.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-caramelo.jpg?v=2" alt="Volcán de Caramelo Salado" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán de Caramelo Salado <span class="badge">Nuevo</span></h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con corazón fundido de caramelo salado.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-pistacho.jpg?v=2" alt="Volcán Pistacho" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán Pistacho</h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con centro cremoso de pistacho.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-cookies.jpg?v=2" alt="Volcán Cookies & Cream" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán Cookies & Cream</h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con corazón de cookies and cream.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/brownie-milo.jpg?v=2" alt="Brownie Galleta Milo Macadamia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Brownie Galleta Milo Macadamia</h3><span class="dish-price">$28.000</span></div><p>Galleta de Milo melcochuda con macadamia y galleta de chocolate blanco.</p></div></div>
-      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/galleta-macadamia.jpg?v=2" alt="Galleta Horneada Macadamia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Galleta Horneada Macadamia</h3><span class="dish-price">$27.000</span></div><p>Galleta artesanal recién horneada con macadamia.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/tarta-creme-brulee.webp?v=3" alt="Tarta Crème Brûlée" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Tarta Crème Brûlée</h3><span class="dish-price">$33.000</span></div><p>Relleno de queso crema Filadelfia, corteza crocante y dorada, mermelada de frutos rojos y crumble de galleta.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-caramelo.webp?v=3" alt="Volcán de Caramelo Salado" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán de Caramelo Salado <span class="badge">Nuevo</span></h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con corazón fundido de caramelo salado.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-pistacho.webp?v=3" alt="Volcán Pistacho" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán Pistacho</h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con centro cremoso de pistacho.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/volcan-cookies.webp?v=3" alt="Volcán Cookies & Cream" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Volcán Cookies & Cream</h3><span class="dish-price">$30.000</span></div><p>Volcán tibio con corazón de cookies and cream.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/brownie-milo.webp?v=3" alt="Brownie Galleta Milo Macadamia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Brownie Galleta Milo Macadamia</h3><span class="dish-price">$28.000</span></div><p>Galleta de Milo melcochuda con macadamia y galleta de chocolate blanco.</p></div></div>
+      <div class="dish has-img"><img class="dish-thumb" src="assets/img/menu/galleta-macadamia.webp?v=3" alt="Galleta Horneada Macadamia" loading="lazy" /><div class="dish-body"><div class="dish-head"><h3>Galleta Horneada Macadamia</h3><span class="dish-price">$27.000</span></div><p>Galleta artesanal recién horneada con macadamia.</p></div></div>
     </div>
 
     <!-- CÓCTELES -->
@@ -344,12 +373,12 @@
     <p class="section-sub">Un vistazo a lo que servimos cada noche.</p>
   </div>
   <div class="gallery-grid">
-    <figure class="gallery-item reveal" data-label="Horno de leña"><img src="assets/img/cover-horno.jpg?v=2" alt="Horno de leña" loading="lazy" /></figure>
-    <figure class="gallery-item reveal" data-label="Masa artesanal" style="--d:1"><img src="assets/img/cover-masa.jpg?v=2" alt="Masa artesanal" loading="lazy" /></figure>
-    <figure class="gallery-item reveal" data-label="Sweet Chili Pepperoni" style="--d:2"><img src="assets/img/menu/sweet-chili.jpg?v=2" alt="Pizza Sweet Chili Pepperoni" loading="lazy" /></figure>
-    <figure class="gallery-item reveal" data-label="Maccheroni Carbonara" style="--d:3"><img src="assets/img/menu/carbonara.jpg?v=2" alt="Maccheroni Carbonara" loading="lazy" /></figure>
-    <figure class="gallery-item reveal" data-label="Carpaccio de Res" style="--d:4"><img src="assets/img/menu/carpaccio.jpg?v=2" alt="Carpaccio de Res" loading="lazy" /></figure>
-    <figure class="gallery-item reveal" data-label="Volcán Pistacho" style="--d:5"><img src="assets/img/menu/volcan-pistacho.jpg?v=2" alt="Volcán Pistacho" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Horno de leña"><img src="assets/img/cover-horno.webp?v=3" alt="Horno de leña" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Masa artesanal" style="--d:1"><img src="assets/img/cover-masa.webp?v=3" alt="Masa artesanal" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Sweet Chili Pepperoni" style="--d:2"><img src="assets/img/menu/sweet-chili.webp?v=3" alt="Pizza Sweet Chili Pepperoni" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Maccheroni Carbonara" style="--d:3"><img src="assets/img/menu/carbonara.webp?v=3" alt="Maccheroni Carbonara" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Carpaccio de Res" style="--d:4"><img src="assets/img/menu/carpaccio.webp?v=3" alt="Carpaccio de Res" loading="lazy" /></figure>
+    <figure class="gallery-item reveal" data-label="Volcán Pistacho" style="--d:5"><img src="assets/img/menu/volcan-pistacho.webp?v=3" alt="Volcán Pistacho" loading="lazy" /></figure>
   </div>
 </section>
 
@@ -362,19 +391,19 @@
 
   <div class="sedes-grid">
     <div class="sede-card reveal">
-      <div class="sede-name"><i class="ti ti-map-pin"></i> El Poblado</div>
+      <div class="sede-name"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> El Poblado</div>
       <p class="sede-desc">El corazón gastronómico de Medellín. Ambiente íntimo y de autor.</p>
       <div class="sede-links">
-        <a href="https://maps.app.goo.gl/VGRGrMFMMTBbAntR8" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-map-pin"></i> Google Maps</a>
-        <a href="https://waze.com/ul/hd34724phb" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-brand-waze"></i> Waze</a>
+        <a href="https://maps.app.goo.gl/VGRGrMFMMTBbAntR8" target="_blank" rel="noopener" class="sede-link"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Google Maps</a>
+        <a href="https://waze.com/ul/hd34724phb" target="_blank" rel="noopener" class="sede-link"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Waze</a>
       </div>
     </div>
     <div class="sede-card reveal" style="--d:1">
-      <div class="sede-name"><i class="ti ti-map-pin"></i> Laureles</div>
+      <div class="sede-name"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Laureles</div>
       <p class="sede-desc">Nuestra casa en el occidente de la ciudad. Tradición y buena mesa.</p>
       <div class="sede-links">
-        <a href="https://maps.app.goo.gl/mUNts7UPjVfGxSpZ6" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-map-pin"></i> Google Maps</a>
-        <a href="https://waze.com/ul/hd345x8y1g" target="_blank" rel="noopener" class="sede-link"><i class="ti ti-brand-waze"></i> Waze</a>
+        <a href="https://maps.app.goo.gl/mUNts7UPjVfGxSpZ6" target="_blank" rel="noopener" class="sede-link"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Google Maps</a>
+        <a href="https://waze.com/ul/hd345x8y1g" target="_blank" rel="noopener" class="sede-link"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Waze</a>
       </div>
     </div>
   </div>
@@ -389,14 +418,14 @@
   </div>
 
   <div class="reservas-actions reveal">
-    <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="btn btn-gold btn-lg"><i class="ti ti-brand-whatsapp"></i> Reservar por WhatsApp</a>
-    <a href="https://www.rappi.com.co/restaurantes/900242973-pizzeria-vesuvio" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"><i class="ti ti-moped"></i> Pedir por Rappi</a>
+    <a href="https://wa.link/0pwndy" target="_blank" rel="noopener" class="btn btn-gold btn-lg"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg> Reservar por WhatsApp</a>
+    <a href="https://www.rappi.com.co/restaurantes/900242973-pizzeria-vesuvio" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"><svg class="icon" aria-hidden="true"><use href="#icon-delivery"/></svg> Pedir por Rappi</a>
   </div>
 </section>
 
 <!-- ══ FOOTER ══ -->
 <footer class="footer">
-  <img src="assets/img/logo.png?v=2" alt="Vesuvio" class="footer-logo-img" />
+  <img src="assets/img/logo.webp?v=3" alt="Vesuvio" class="footer-logo-img" />
   <div class="footer-sub">PIZZERÍA DE AUTOR · MEDELLÍN</div>
   <div class="footer-links">
     <a href="#historia">Historia</a>
